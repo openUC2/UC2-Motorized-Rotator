@@ -3,59 +3,43 @@
 <a href="#logo" name="logo"><img src="https://raw.githubusercontent.com/bionanoimaging/UC2-GIT/master/IMAGES/UC2_logo_text.png" width="400"></a>
 </p>
 
-# openUC2 *PROJECT_NAME*
+# openUC2 *Motorized Filter/Polarizer/Despeckle Rotator*
 ---
 
-This repository will help you to build and setup *A NICE TOOL*.
-
-*DESCRIBE WHAT IT DOES AND WHAT IT IS FOR.*
+This repository will help you to build and setup a helpful tool to precisely rotate a 25mm filter or turn a diffuser in a fast way to randomize speckles.
 
 Curious to see what this looks like? Keep scrolling!
 
-*INCLUDE A NICE PICTURE AND/OR SCHEME.*
+The rotator is motivated by this manuscript: [Article Cover
+Step-by-step guide to 3D print motorized rotation mounts for optical applications](https://opg.optica.org/ao/fulltext.cfm?uri=ao-60-13-3764&id=450413) by Nilsson et al. 
 
 <p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/"></a>
+<a href="#logo" name="logo"><img src="./IMAGES/Assembly_Cube_Template_rotational_filtermount_v3.png"></a>
 </p>
 
-The overall price is in the range *OF LESS THAT A ZILLION*.
-
+The entire assembly is 3D printed including the belts. You only need 3 ballbearings and a NEMA Motor. 
 
 ***Features:***
-* IT MOVES?!
-* IT TAKES IMAGES?!
-* IT DOES YOUR LAUNDRY?!
-
-
-# Table of Content
-* **[Software](#-software)**
-* **[Hardware](#-hardware)**
-* **[Bill of materials](#-bill-of-materials)**
-* **[Electronics](#-electronics)**
-* **[Results](#-results)**
-
+* Rotates at angular precision
+* Holds 25mm filters
 
 ## In-Action
-*SHARE YOUR FANCY GIF HERE. IT MOVES!*
+
+An earlier version with a 28BYI Motor and longer belt:
 
 <p align="center">
-<a href="#logo" name="logo"><img src="./IMAGES/" width="600"></a>
+<a href="#logo" name="logo"><img src="./IMAGES/Uc2RotMount.gif" width="600"></a>
 </p>
 
 
 # Software
-*HOW DO I CONTROL THIS THING?*
 
-## Custom Python code *IF APPLICABLE*
-We also provide a code example for driving the device using a python driver. Please refer to the code and the package in the folder [PYTHON](./PYTHON).
+Please review a tutorial on how to control a stepper motor e.g. [here](https://www.makerguides.com/a4988-stepper-motor-driver-arduino-tutorial/). An in-detail electronics schematics acan also be found in the manuscript by  [Nilsson et al.](https://opg.optica.org/ao/fulltext.cfm?uri=ao-60-13-3764&id=450413) 
 
-## *CUSTOM FANCY SOFTWARE*
-We also provide *SOME SORCERY* for driving the device. Find the files in folder [*MY_AWESOME_SOFTWARE*]().
 
 # Hardware
 
 Below we describe how the device can be build and assembled in order to replicate the whole system as shown in the rendering above. One needs additional parts that can be found in the core [openUC2 repository](https://github.com/bionanoimaging/UC2-GIT).
-
 
 ## Bill of material
 
@@ -63,58 +47,52 @@ Below you will find all components necessary to build this device
 
 ### 3D printing files
 
-All these files need to be printed. We used a Prusa i3 MK3 using PLA Prusament (Galaxy Black) at layer height x.x mm and infill xx%.
-
-
-|  Type | Details  |  Price | Link  |
-|---|---|---|---|
-| *FANCY* Holder |  *IT HOLD OTHER FANCY PARTS* |  x,xx € | [Part.stl](./STL/)  |
-
+All files (*) in the [STL](./STL)-folder need to be printed. We used a Prusa i3 MK3 using PLA Prusament (Galaxy Black) at layer height 0.3 mm and infill 100%.
+The GT2 belt can either be printed using Ninjaflex or you buy one with 89 teeth. 
 
 ### Additional parts
 This is used in the current version of the setup
 
 |  Type | Details  |  Price | Link  |
 |---|---|---|---|
-| *FANCY* Part | *IT DOES SOME MAGIC* |  xx € | [My favourite online shop]()  |
+| Nema 11 motor | Rotates the whole thing |  22 € | [e.g. Eckstein](https://eckstein-shop.de/PololuStepperMotorNEMA11Bipolar200StepsRev28C39732mm38V067APhase)  |
+| 8x5x3 mm ball bearing | ensures smooth rotation |  10 € | [e.g. Vogel Modellsport](https://www.vogel-modellsport.de/Differential-Kugellager-8x5x3mm-2-Stueck-.htm?SessionId=&a=article&ProdNr=66-RA0279)  |
 
 ### Design files
-The original design files are in the [INVENTOR](./INVENTOR) folder. *FOR ANOTHER FORMAT, GET YOUR OWN FOLDER.*
-
-
-### Electronics
-*THE FANCY ELECTRONICS TO RUN THE MOTOR! ...OR WHATEVER YOU USE THERE.*
+The original design files are in the [INVENTOR](./INVENTOR) folder. 
 
 
 ### Assembly of the DEVICE
 
-***1.*** *These are the parts needed for the DEVICE*
+***1.*** Add the 3 ball bearings to the "pins" of the [Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3.iam_1](./STL/Assembly_Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3.iam_1)
 
 <p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
+<a> <img src="./IMAGES/setup1.png" width="300"></a>
 </p>
 
-***2.*** *Start by ...*
+
+
+***2.*** Add the rotational part to the bearings. If it does not rotate smoothly remove any "ripples" using e.g. sandpaper[Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2](./STL/Assembly_Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2)
 
 <p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
+<a> <img src="./IMAGES/setup2.png" width="300"></a>
 </p>
 
-***2.*** *Continue with ...*
+
+
+***3.*** Add the NEMA11 motor to the holder. Also add the belt gear [Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2](./STL/Assembly_Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2)
 
 <p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
+<a> <img src="./IMAGES/setup3.png" width="300"></a>
 </p>
 
-***2.*** *DONE! LOOK AT THE BEAUTY!*
+***4.*** Put everything in to the cubes, add the belt and filter
 
-<p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
-</p>
-
+***5.*** Done
 
 ## Showcase
-*AWESOME RESULTS!*
+
+Will come soon :) 
 
 <p align="center">
 <a> <img src="./IMAGES/" width="300"></a>

@@ -67,7 +67,7 @@ The original design files are in the [INVENTOR](./INVENTOR) folder.
 ***1.*** Add the 3 ball bearings to the "pins" of the [Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3.iam_1](./STL/Assembly_Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3.iam_1)
 
 <p align="center">
-<a> <img src="./IMAGES/setup1.png" width="300"></a>
+<a> <img src="./IMAGES/setup1.PNG" width="300"></a>
 </p>
 
 
@@ -75,7 +75,7 @@ The original design files are in the [INVENTOR](./INVENTOR) folder.
 ***2.*** Add the rotational part to the bearings. If it does not rotate smoothly remove any "ripples" using e.g. sandpaper[Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2](./STL/Assembly_Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2)
 
 <p align="center">
-<a> <img src="./IMAGES/setup2.png" width="300"></a>
+<a> <img src="./IMAGES/setup2.PNG" width="300"></a>
 </p>
 
 
@@ -83,7 +83,7 @@ The original design files are in the [INVENTOR](./INVENTOR) folder.
 ***3.*** Add the NEMA11 motor to the holder. Also add the belt gear [Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2](./STL/Assembly_Cube_Template_rotational_filtermount_v3_20_Cube_Insert_rotational_filtermount_v3_2)
 
 <p align="center">
-<a> <img src="./IMAGES/setup3.png" width="300"></a>
+<a> <img src="./IMAGES/setup3.PNG" width="300"></a>
 </p>
 
 ***4.*** Put everything in to the cubes, add the belt and filter
@@ -92,13 +92,21 @@ The original design files are in the [INVENTOR](./INVENTOR) folder.
 
 ## Showcase
 
-Will come soon :) 
+Simple setup that shhows the effect of cross polarizers
+
 
 <p align="center">
-<a> <img src="./IMAGES/" width="300"></a>
+<a> <img src="./IMAGES/uc2rot.gif" width="500"></a>
 </p>
 
-***Fig 1.*** *MY MOST AWSOME IMAGE*
+***Fig 1.*** Rotation of polarizers
+
+<p align="center">
+<a> <img src="./IMAGES/IMG_20220216_073210.jpg" width="500"></a>
+</p>
+
+***Fig 2.*** Setup
+
 
 
 ## Get Involved
